@@ -4,7 +4,6 @@ services:
     build: .
     ports:
       - "3000:3000"
-
     # TODO(step-5b): set the DATABASE_URL env var so the app can reach Postgres.
     # HINT: you can find this URL in .env.example
     environment:
@@ -14,7 +13,6 @@ services:
     depends_on:
       db:
         condition: service_healthy
-
   db:
     # TODO(step-5d): use postgres:16-alpine and define a healthcheck using pg_isready.
     image: postgres:16-alpine
