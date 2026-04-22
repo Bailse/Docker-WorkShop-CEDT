@@ -9,6 +9,9 @@ services:
     environment:
       DATABASE_URL: postgres://postgres:postgres@db:5432/workshop
 
+
+
+
     # TODO(step-5c): make `web` wait until `db` is healthy before starting.
     depends_on:
       db:
@@ -38,6 +41,13 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: workshop
 
+
+
+
 # TODO(step-5h): declare the named volume `pgdata` at the top level.
 volumes:
   pgdata:
+
+
+
+
